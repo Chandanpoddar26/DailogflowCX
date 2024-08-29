@@ -1,0 +1,10 @@
+{
+  "name": "09e18c66-650d-4b68-94b7-3725f419910c",
+  "displayName": "GigaHome Plans",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "numTrainingPhrases": 1
+}

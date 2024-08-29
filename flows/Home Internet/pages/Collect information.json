@@ -1,0 +1,93 @@
+{
+  "name": "0f264276-7fa8-4637-b90c-7cc36d8c143c",
+  "displayName": "Collect information",
+  "form": {
+    "parameters": [ {
+      "displayName": "usage",
+      "required": true,
+      "entityType": "@usageType",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Can you provide me  usage for which you are looking for a plan. e.g. Streaming, Gaming etc." ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "think and try again" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "309e86ba-f4ac-4578-9b62-c17e691859b5"
+        }, {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "think again bro and try one more time" ]
+              },
+              "languageCode": "en"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "8499834a-3d08-4044-9146-a19e0191dd34"
+        } ]
+      }
+    }, {
+      "displayName": "speed",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Can you provide , how much speed you are looking for in mbps?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Show collected info",
+    "name": "4474d70d-a284-4982-877e-a9f56ea446ea"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "i did not get that can please retry" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "81e0579f-4648-4bd8-ade8-523f4a4e0752"
+  } ]
+}

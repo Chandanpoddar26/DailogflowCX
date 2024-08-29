@@ -1,0 +1,69 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7bc17d21-72af-4a4a-8852-9917f597e31f"
+  }, {
+    "intent": "redirect.home_internet",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$session.params.ran" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/grecords-retail-bot-432612/locations/us-central1/agents/8780204d-8064-4e77-ba64-69d6b7f60d12/generators/c08de54a-cbf2-4da4-8522-d91946d931ac",
+        "outputParameter": "ran"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Home Internet",
+    "name": "93bd6b0a-cf20-457a-8260-f55bbad5d6fa"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "faf93b2b-bba2-488e-a6db-e6181231b202"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "10c79c66-0476-439d-8055-62a2398bdce9"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "1c4134e9-caec-47d0-b203-c6aab44dc1c0",
+    "languageCode": "en"
+  } ]
+}

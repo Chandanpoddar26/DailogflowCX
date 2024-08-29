@@ -1,0 +1,23 @@
+{
+  "name": "7f276028-7c31-4f58-90b0-644d118b87a1",
+  "displayName": "Show collected info",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Great! you want $session.params.speed speed internet for $session.params.usage" ]
+      },
+      "languageCode": "en"
+    }, {
+      "languageCode": "en",
+      "knowledgeInfoCard": {
+        "maximumSnippets": 1
+      }
+    } ],
+    "nextActionOverride": {
+    
+    }
+  }
+}

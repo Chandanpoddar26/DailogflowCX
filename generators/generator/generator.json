@@ -1,0 +1,13 @@
+{
+  "name": "c08de54a-cbf2-4da4-8522-d91946d931ac",
+  "displayName": "generator",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

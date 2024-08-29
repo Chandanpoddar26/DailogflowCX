@@ -1,0 +1,53 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "America/Los_Angeles",
+  "enableLogging": true,
+  "projectNumber": 556743133943,
+  "speechToTextSettings": {
+  
+  },
+  "startFlow": "Default Start Flow",
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableInteractionLogging": true
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+  
+  },
+  "duplexSettings": {
+  
+  },
+  "callCompanionSettings": {
+    "company": "Call Companion"
+  },
+  "answerFeedbackSettings": {
+    "enableAnswerFeedback": true
+  },
+  "webClientSettings": {
+    "displayName": "Call Companion",
+    "font": "Google Sans",
+    "textColor": "#000",
+    "backgroundColor": "#f3f6fc",
+    "userInputColor": "#d3e3fd",
+    "agentResponseColor": "#fff",
+    "userInputTextColor": "#000",
+    "agentResponseTextColor": "#000",
+    "boxBorderRadius": "0"
+  }
+}

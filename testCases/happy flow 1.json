@@ -1,0 +1,88 @@
+{
+  "name": "9c6a2f88-c1c8-402f-a020-2aee21e0597b",
+  "tags": [ "#homeInternetFlow" ],
+  "displayName": "happy flow 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i'm looking for broadband plan for my home"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.home_internet"
+      },
+      "currentPage": {
+        "name": "Collect information",
+        "flow": "Home Internet"
+      },
+      "textResponses": [ {
+        "text": [ "Please provide me with the title of the book you are asking about. I need to know the book's name to tell you who wrote it. 😊 \n" ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      }, {
+        "text": [ "Can you provide me  usage for which you are looking for a plan. e.g. Streaming, Gaming etc." ]
+      } ],
+      "currentFlow": {
+        "name": "Home Internet"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "streaming"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect information",
+        "flow": "Home Internet"
+      },
+      "textResponses": [ {
+        "text": [ "Can you provide , how much speed you are looking for in mbps?" ]
+      } ],
+      "currentFlow": {
+        "name": "Home Internet"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "100"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Show collected info",
+        "flow": "Home Internet"
+      },
+      "textResponses": [ {
+        "text": [ "Great! you want 100 speed internet for streaming" ]
+      } ],
+      "currentFlow": {
+        "name": "Home Internet"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1724929075,
+    "nanos": 578403000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

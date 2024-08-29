@@ -1,0 +1,11 @@
+{
+  "name": "f4731487-1d1d-44ec-9b9c-b920cc119489",
+  "displayName": "redirect.home_internet",
+  "parameters": [ {
+    "id": "usageType",
+    "entityType": "@usageType"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 11,
+  "dtmfPattern": "2"
+}

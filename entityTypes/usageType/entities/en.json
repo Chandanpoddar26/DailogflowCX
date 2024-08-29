@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "streaming",
+    "synonyms": [ "streaming" ],
+    "languageCode": "en"
+  }, {
+    "value": "gaming",
+    "synonyms": [ "gaming" ],
+    "languageCode": "en"
+  } ]
+}
